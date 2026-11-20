@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+header {
+    background-color: #0b3954;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #087e8b;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+main {
+    flex: 3;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+aside {
+    flex: 1;
+    min-width: 240px;
+    background: #e3edf5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section, article {
+    margin-bottom: 22px;
+}
+
+h2 {
+    color: #0b3954;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #087e8b;
+    margin: 12px 0 6px;
+}
+
+ul, ol {
+    margin-left: 22px;
+    margin-bottom: 15px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0b3954;
+    color: white;
+}
+
+form div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #087e8b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #0b3954;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main, aside {
+        min-width: 100%;
+    }
+}
